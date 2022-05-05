@@ -1,0 +1,3 @@
+/home/ovvesley/CLionProjects/trabalho-threads/cmake-build-debug/CMakeFiles/trabalho_threads.dir
+/home/ovvesley/CLionProjects/trabalho-threads/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/ovvesley/CLionProjects/trabalho-threads/cmake-build-debug/CMakeFiles/rebuild_cache.dir

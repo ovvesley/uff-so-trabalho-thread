@@ -1,0 +1,6 @@
+# ninja log v5
+42	62	1651789754445685436	trabalho_threads	a283918cc8d7f493
+0	63	1651787798187108143	CMakeFiles/trabalho_threads.dir/main.c.o	317348c185ccd244
+0	15	1651789771637576195	build.ninja	2d8f2be24be3b925
+0	47	1651789390124054910	CMakeFiles/trabalho_threads.dir/main_parte_2.c.o	97d226425dbd013d
+0	42	1651789754425685562	CMakeFiles/trabalho_threads.dir/parte-2/main.c.o	9f5dafd015056d08
