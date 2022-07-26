@@ -20,23 +20,36 @@ void print_thread(void *args)
 int main()
 {
     int n = 0;
-    char name[16];
 
     printf("Informe a quantidade de Threads: ");
     scanf("%d", &n);
     printf("\n");
 
     thrd_t *thread;
+    char **names;
     thread = malloc(sizeof (thrd_t) * n);
 
+    names = malloc(sizeof (char**) * n);
+    for (int index = 0; index< n; index++){
+        names[index] = malloc(sizeof (char*) * 16);
+        sprintf(names[index], "thread_%d", index);
+    }
+
     for (int index = 0; index < n; ++index) {
-        sprintf(name, "thread_%d", index);
-        thrd_create(&thread[index], (thrd_start_t) print_thread, name);
+        thrd_create(&thread[index], (thrd_start_t) print_thread, names[index]);
     }
 
     for (int index = 0; index < n; ++index) {
         thrd_join(thread[index], NULL);
     }
+
+
+    for (int index = n; index > 0; --index) {
+        free(names[index]);
+    }
+    free(thread);
+
+
 
     return 0;
 }
